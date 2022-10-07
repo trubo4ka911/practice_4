@@ -1,0 +1,38 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+a:first-of-type:hover,
+p:first-of-type:first-letter,
+p:first-of-type:hover {
+    color: red;
+}
+a:nth-of-type(2n):hover,
+p:nth-of-type(2n):first-letter,
+p:nth-of-type(2n):hover {
+    color: green;
+}
+a:last-of-type:hover,
+p:last-of-type:first-letter,
+p:last-of-type:hover {
+    color: blue;
+}
+p:hover::first-letter{
+    color: black;
+}
+a:first-of-type::selection,
+p:first-of-type::selection {
+    color: white;
+    background: red;
+}
+a:nth-of-type(2n)::selection,
+p:nth-of-type(2n)::selection {
+    color: white;
+    background: green;
+}
+a:last-of-type::selection,
+p:last-of-type::selection {
+    color: white;
+    background: blue;
+}
+
